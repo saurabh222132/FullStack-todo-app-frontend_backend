@@ -10,7 +10,7 @@ const port = process.env.port || 3001;
 mongoose.set("strictQuery", true); // This line is added to remove DeprecationWarning
 //connecting to database
 const main = async () => {
-  await mongoose.connect(`${process.env.base_url}`);
+  await mongoose.connect(`${process.env.base_url}`); 
 };
 main();
 
